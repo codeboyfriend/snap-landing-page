@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Noto+Sans+KR:wght@400;500&family=Ubuntu:wght@300;400;500&display=swap');
+
+$white: hsl(0, 0%, 98%);
+$gray: hsl(0, 0%, 41%);
+$black: hsl(0, 0%, 8%);
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 7px 15px;
+    border: none;
+    background: none;
+}
+
+.btn_1 {
+    background-color: $black;
+    color: $white;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    .logo {
+        justify-self: flex-start;
+        img {
+            width: 70px;
+            margin-top: .5rem;
+        }
+    }
+
+    .mobile {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .9rem;
+
+        .link {
+            margin: 0 1rem;
+            color: rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+
+        .extension {
+            display: flex;
+            align-items: center;
+
+            .arrow {
+                margin-left: 5px;
+                margin-bottom: .2rem;
+            }
+        }
+    }
+
+    .buttons {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+.landing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 5rem;
+    padding: 10px 50px;
+
+    .mobile {
+        display: none;
+    }
+
+    .left {
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size:  1rem;
+            color: rgba(0, 0, 0, 0.7);
+            line-height: 1.5em;
+            margin-bottom: 1rem;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+
+            img {
+                width: 80px;
+            }
+        }
+    }
+
+    .right {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@import "media";
