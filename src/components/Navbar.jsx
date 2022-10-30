@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext } from "react";
+import SnapContext from "../context/GlobalContext";
 import Logo from "../assets/images/logo.svg";
 import arrow_up from "../assets/images/icon-arrow-up.svg";
 import arrow_down from "../assets/images/icon-arrow-down.svg";
@@ -6,10 +7,14 @@ import open from "../assets/images/icon-menu.svg";
 import close from "../assets/images/icon-close-menu.svg";
 
 const Navbar = () => {
-    const [features, setFeatures] = useState(false);
-    const [company, setCompany] = useState(false);
-    const [menu, setMenu] = useState(false);
-
+  const { 
+    features,
+    setFeatures,
+    company,
+    setCompany,
+    menu,
+    setMenu 
+} = useContext(SnapContext)
   return (
     <div className="navbar">
       <div className="logo">
