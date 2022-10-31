@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import Shadow from "./components/Shadow";
 import MobileNav from "./components/MobileNav";
+import FeatureMenu from "./components/FeatureMenu";
+import CompanyMenu from "./components/CompanyMenu";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Navbar />
         <Landing />
         <Shadow />
+        <FeatureMenu />
+        <CompanyMenu />
         <MobileNav />
       </div>
     </SnapProvider>

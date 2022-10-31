@@ -153,6 +153,33 @@ body {
   left: 0;
 }
 
+.sub_menu {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  line-height: 2.5em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.sub_menu img {
+  margin-right: 0.5rem;
+  width: 15x;
+}
+.sub_menu p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.feature {
+  top: 10%;
+  left: 8%;
+}
+
+.company {
+  top: 10%;
+  left: 20%;
+}
+
 @media (max-width: 765px) {
   .navbar .mobile {
     display: none;
