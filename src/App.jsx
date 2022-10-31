@@ -2,6 +2,7 @@ import { SnapProvider } from "./context/GlobalContext";
 import "./css/style.css";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
+import Shadow from "./components/Shadow";
 import MobileNav from "./components/MobileNav";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div className="container">
         <Navbar />
         <Landing />
+        <Shadow />
         <MobileNav />
       </div>
     </SnapProvider>

@@ -25,15 +25,15 @@ const Navbar = () => {
         <div className="links">
             <p className="extension link" onClick={() => setFeatures(!features)}>
                 Features
-                <div className="arrow">
+                <span className="arrow">
                   <img src={features ? arrow_up : arrow_down} alt="" />
-                </div>
+                </span>
             </p>
             <p className="extension link" onClick={() => setCompany(!company)}>
                 Company
-                <div className="arrow">
+                <span className="arrow">
                   <img src={company ? arrow_up : arrow_down} alt="" />
-                </div>
+                </span>
             </p>
             <p className="link">Careers</p>
             <p className="link">About</p>

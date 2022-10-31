@@ -108,6 +108,51 @@ body {
      object-fit: cover;
 }
 
+.mobile_nav {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: hsl(0deg, 0%, 98%);
+  padding: 60px 20px 0 20px;
+  line-height: 2.5em;
+}
+.mobile_nav .arrow {
+  margin-left: 15px;
+  margin-bottom: 1rem;
+}
+.mobile_nav .mobile_btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.mobile_nav .mobile_btn .btn {
+  padding: 10px 40px;
+  margin-bottom: 1rem;
+}
+.mobile_nav .mobile_btn .btn_m {
+  border: 1px solid hsl(0deg, 0%, 8%);
+  border-radius: 5px;
+}
+.mobile_nav .sub_links {
+  font-size: 0.9rem;
+}
+.mobile_nav .sub_links img {
+  margin-right: 0.5rem;
+}
+.mobile_nav .sub_links p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.shadow {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 @media (max-width: 765px) {
   .navbar .mobile {
     display: none;
@@ -119,6 +164,7 @@ body {
   }
   .navbar .menu {
     display: block;
+    z-index: 1000;
   }
   .navbar .menu img {
     width: 20px;
@@ -138,11 +184,12 @@ body {
     text-align: center;
   }
   .landing .left h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   .landing .left p {
     font-size: 0.9rem;
+    line-height: 1.2em;
   }
   .landing .left .images {
     margin-top: 30px;

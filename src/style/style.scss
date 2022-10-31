@@ -131,4 +131,56 @@ body {
     }
 }
 
+.mobile_nav {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $white;
+    padding: 60px 20px 0 20px;
+    line-height: 2.5em;
+
+    .arrow{
+        margin-left: 15px;
+        margin-bottom: 1rem;
+    }
+
+    .mobile_btn {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        .btn {
+            padding: 10px 40px;
+            margin-bottom: 1rem;
+        }
+
+        .btn_m {
+            border: 1px solid $black;
+            border-radius: 5px;
+        }
+    }
+
+    .sub_links {
+        font-size: .9rem;
+
+        img {
+            margin-right: .5rem;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+.shadow {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left:  0;
+}
+
 @import "media";
