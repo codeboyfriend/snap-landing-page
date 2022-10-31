@@ -9,10 +9,10 @@ import calendar from "../assets/images/icon-calendar.svg";
 
 const MobileNav = () => {
     const {
-      features,
-      setFeatures,
-      company,
-      setCompany, 
+      mobileFeatures,
+      setMobileFeatures,
+      mobileCompany,
+      setMobileCompany, 
       menu 
     } = useContext(SnapContext)
   return menu ? (
@@ -21,10 +21,10 @@ const MobileNav = () => {
         Features
         <span className="arrow">
           <img 
-            src={features ? arrow_up : arrow_down} 
+            src={mobileFeatures ? arrow_up : arrow_down} 
             onClick={() => {
-              setFeatures(!features)
-              setCompany(false)
+              setMobileFeatures(!mobileFeatures)
+              setMobileCompany(false)
             }} 
             alt="" 
           />
@@ -33,7 +33,7 @@ const MobileNav = () => {
 
       <div>
         {
-          features ? 
+          mobileFeatures ? 
             <div className="sub_links">
               <p>
                 <span className="arrow">
@@ -71,10 +71,10 @@ const MobileNav = () => {
           Company
           <span className="arrow">
             <img 
-              src={company ? arrow_up : arrow_down} 
+              src={mobileCompany ? arrow_up : arrow_down} 
               onClick={() => {
-                setCompany(!company)
-                setFeatures(false)
+                setMobileCompany(!mobileCompany)
+                setMobileFeatures(false)
               }} 
               alt="" 
             />
@@ -83,7 +83,7 @@ const MobileNav = () => {
 
       <div>
         {
-          company ? 
+          mobileCompany ? 
             <div style={{
               paddingLeft: "1rem"
             }} className="sub_links">
