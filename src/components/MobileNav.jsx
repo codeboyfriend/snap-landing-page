@@ -110,8 +110,6 @@ const MobileNav = () => {
         <button className="btn btn_m">Login</button>
         <button className="btn btn_1">Register</button>
       </div>
-
-      {/* <div className="reflection"></div> */}
     </div>
   ) : (
     <div></div>
